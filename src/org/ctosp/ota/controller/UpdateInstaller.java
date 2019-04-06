@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2017 The LineageOS Project
- * Copyright (C) 2019 The PixelExperience Project
+ * Copyright (C) 2019 The ctosp Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.pixelexperience.ota.controller;
+package org.ctosp.ota.controller;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -24,11 +24,11 @@ import android.os.SystemProperties;
 import android.support.v7.preference.PreferenceManager;
 import android.util.Log;
 
-import org.pixelexperience.ota.misc.Constants;
-import org.pixelexperience.ota.misc.FileUtils;
-import org.pixelexperience.ota.misc.Utils;
-import org.pixelexperience.ota.model.UpdateInfo;
-import org.pixelexperience.ota.model.UpdateStatus;
+import org.ctosp.ota.misc.Constants;
+import org.ctosp.ota.misc.FileUtils;
+import org.ctosp.ota.misc.Utils;
+import org.ctosp.ota.model.UpdateInfo;
+import org.ctosp.ota.model.UpdateStatus;
 
 import java.io.File;
 import java.io.IOException;

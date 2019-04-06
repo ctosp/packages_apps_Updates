@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2017 The LineageOS Project
- * Copyright (C) 2019 The PixelExperience Project
+ * Copyright (C) 2019 The ctosp Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,27 +14,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.pixelexperience.ota.model;
+package org.ctosp.ota;
 
-public enum UpdateStatus {
-    UNKNOWN,
-    STARTING,
-    DOWNLOADING,
-    DOWNLOADED,
-    PAUSED,
-    PAUSED_ERROR,
-    DELETED,
-    VERIFYING,
-    VERIFIED,
-    VERIFICATION_FAILED,
-    INSTALLING,
-    INSTALLED,
-    INSTALLATION_FAILED,
-    INSTALLATION_CANCELLED;
+import android.support.v7.app.AppCompatActivity;
 
-    public static final class Persistent {
-        public static final int UNKNOWN = 0;
-        public static final int INCOMPLETE = 1;
-        public static final int VERIFIED = 2;
-    }
+public abstract class UpdatesListActivity extends AppCompatActivity {
+    public abstract void showSnackbar(int stringId, int duration);
 }
